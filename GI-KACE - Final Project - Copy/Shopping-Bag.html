@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Your Shopping Bag — LUXE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Shopping-Bag.css">
+</head>
+<body>
+    
+<header class="site">
+  <div class="wrap nav-row">
+    <div class="logo">LUXE</div>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="index.html">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="nav-icons">
+      <span class="icon-btn"><img src="Assets/Icons/searchicon.svg" alt="Search icon"></span>
+      <span class="icon-btn"><img src="Assets/Icons/usericon.svg" alt="User icon"></span>
+      <span class="icon-btn">
+        <img src="Assets/Icons/bagicon.svg" alt="Bag icon">
+        <span class="cart-count" id="cart-count">3</span>
+      </span>
+    </div>
+  </div>
+</header>
+ 
+<main class="wrap">
+  <section class="hero">
+    <h1>Your Shopping Bag</h1>
+    <p id="item-count-text">You have 3 items in your luxury curation.</p>
+  </section>
+ 
+  <div class="bag-layout">
+    <div class="items" id="items">
+ 
+      <article class="item-card" data-price="285.00">
+        <div class="item-img">
+          <img src="./Assets/Images/structured Linen Blazer.jpg" alt="Structured Linen Blazer">
+        </div>
+        <div class="item-mid">
+          <div class="item-top-row">
+            <div>
+              <p class="item-name">Structured Linen Blazer</p>
+              <p class="item-meta">Ref: LUX-00921 &bull; Midnight Black</p>
+            </div>
+            <button class="remove-btn" aria-label="Remove item">&times;</button>
+          </div>
+          <div class="qty-stepper">
+            <button class="qty-minus">–</button>
+            <span class="qty-val">1</span>
+            <button class="qty-plus">+</button>
+          </div>
+        </div>
+        <div class="item-price">₵285.00</div>
+      </article>
+ 
+      <article class="item-card" data-price="420.00">
+        <div class="item-img">
+          <img src="./Assets/Images/monochrome Horizon watch.jpg" alt="monochrome Horizon watch">
+        </div>
+        <div class="item-mid">
+          <div class="item-top-row">
+            <div>
+              <p class="item-name">Monochrome Horizon Watch</p>
+              <p class="item-meta">Ref: LUX-00445 &bull; Brown Straps &bull; Size S</p>
+            </div>
+            <button class="remove-btn" aria-label="Remove item">&times;</button>
+          </div>
+          <div class="qty-stepper">
+            <button class="qty-minus">–</button>
+            <span class="qty-val">1</span>
+            <button class="qty-plus">+</button>
+          </div>
+        </div>
+        <div class="item-price">₵420.00</div>
+      </article>
+ 
+      <article class="item-card" data-price="195.00">
+        <div class="item-img">
+          <img src="./Assets/Images/Essential Court Sneaker.jpg" alt="Essential Court Sneaker">
+        </div>
+        <div class="item-mid">
+          <div class="item-top-row">
+            <div>
+              <p class="item-name">Essential Court Sneaker</p>
+              <p class="item-meta">Ref: LUX-00812 &bull; Optic White &bull; Size 42</p>
+            </div>
+            <button class="remove-btn" aria-label="Remove item">&times;</button>
+          </div>
+          <div class="qty-stepper">
+            <button class="qty-minus">–</button>
+            <span class="qty-val">1</span>
+            <button class="qty-plus">+</button>
+          </div>
+        </div>
+        <div class="item-price">₵195.00</div>
+      </article>
+ 
+    </div>
+ 
+    <aside class="summary">
+      <h2>Order Summary</h2>
+ 
+      <div class="sum-row">
+        <span id="subtotal-label">Subtotal (3 items)</span>
+        <span class="val" id="subtotal-val">₵2,350.00</span>
+      </div>
+      <div class="sum-row free">
+        <span>Estimated Shipping</span>
+        <span class="val">Free</span>
+      </div>
+      <div class="sum-row">
+        <span>Estimated Tax</span>
+        <span class="val" id="tax-val">₵188.00</span>
+      </div>
+ 
+      <hr class="sum-divider">
+ 
+      <div class="sum-total">
+        <span class="label">Total</span>
+        <span class="val" id="total-val">₵2,538.00</span>
+      </div>
+ 
+      <p class="promo-label">Promotion Code</p>
+      <div class="promo-row">
+        <input type="text" placeholder="Enter code">
+        <button class="promo-apply">Apply</button>
+      </div>
+ 
+      <button class="checkout-btn">
+        Proceed to Checkout
+        <img src="Assets/Icons/arrow-right.svg" alt="Proceed">
+      </button>
+ 
+      <div class="perks">
+        <div class="perk">
+          <img src="Assets/Icons/usericon.svg" alt="Secure" class="perk-icon">
+          Secure Payment Guarantee
+        </div>
+        <div class="perk">
+          <img src="Assets/Icons/bagicon.svg" alt="Delivery" class="perk-icon">
+          Complimentary Express Delivery
+        </div>
+        <div class="perk">
+          <img src="Assets/Icons/social-globe.svg" alt="Returns" class="perk-icon">
+          30-Day Effortless Returns
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+ 
+<footer class="site">
+  <div class="wrap foot-top">
+    <div>
+      <div class="foot-logo">LUXE</div>
+      <p class="foot-desc">Elevating the everyday through curated design and uncompromising quality.</p>
+    </div>
+    <div>
+      <p class="foot-heading">Shop</p>
+      <div class="foot-links">
+        <a href="#">New Arrivals</a>
+        <a href="#">Signature Series</a>
+        <a href="#">Monolith 2024</a>
+        <a href="#">Archival Items</a>
+      </div>
+    </div>
+    <div>
+      <p class="foot-heading">Customer Care</p>
+      <div class="foot-links">
+        <a href="#">Shipping Info</a>
+        <a href="#">Returns &amp; Exchanges</a>
+        <a href="#">Size Guide</a>
+        <a href="#">FAQ</a>
+      </div>
+    </div>
+    <div>
+      <p class="foot-heading">Connect</p>
+      <div class="social-row">
+        <span class="social-btn"><img src="Assets/Icons/social-globe.svg" alt="Social globe"></span>
+        <span class="social-btn"><img src="Assets/Icons/social-square.svg" alt="Social square"></span>
+        <span class="social-btn"><img src="Assets/Icons/social-chat.svg" alt="Social chat"></span>
+      </div>
+      <div class="contact-info">
+        contact@luxecollective.com<br>
+        +1 (800) LUXE-CURATED
+      </div>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2024 LUXE Collective. All rights reserved.</span>
+    <div class="legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

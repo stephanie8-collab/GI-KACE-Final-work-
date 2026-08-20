@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Jost", sans-serif;
+}
+body{
+    font-family: 'Jost', sans-serif;
+    background:white;
+    color:#222;
+    background-color: #faf8f3;  
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Playfair Display', Times, serif;
+}
+.intro2{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.page-title{
+    color:#b9b9b9;
+    font-size:22px;
+    font-weight:400;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:3px 80px;
+}
+
+header h1{
+    font-size:42px;
+    font-family:'Playfair Display', serif;
+    letter-spacing:2px;
+}
+
+#shop-link{
+    text-decoration:none;
+    color:#777;
+    font-size:12px;
+    font-weight:bold;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top:20px;
+    }
+
+.card{  
+    width:400px;
+    background:white;
+    padding:35px;
+    border-radius:5px;
+    border:1px solid #ddd;
+    margin-top:20px;
+}
+.card h2{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.card p{
+    font-size: 14px;
+    color: #777;
+}
+.card input{
+    width:100%;
+    border:none;
+    border-bottom:1px solid #ccc;
+    padding:14px 0;
+    margin-bottom:18px;
+    font-size:14px;
+    outline:none;
+}
+label{
+    font-size: 11px;
+    font-weight: bold;
+    color: #777;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+.create-btn{
+    width:100%;
+    padding:12px;
+    font-size: 13px;
+    background:#4d1fff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
+}
+.or{
+    text-align:center;
+    margin:20px 0;
+    color:#999;
+}
+.google-btn{
+    width:100%;
+    padding:15px;
+    background:white;
+    border:1px solid #ccc;
+    border-radius:5px;
+    cursor:pointer;
+}
+.login{
+    text-align:center;
+    margin-top:20px;
+    font-size:14px;
+}
+
+.login a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+.quote{
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    margin-top: 25px;
+    font-style: italic;
+}
+footer{
+    margin-top:35px;
+    border-top:1px solid #ddd;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 20px;
+    padding:20px 50px;
+    flex-wrap: wrap;
+}
+footer p{
+    color: #777;
+    font-size: 12px;
+    margin: 0;
+}
+footer div{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+footer a{
+    text-decoration: none;
+    color: #777;
+    font-size: 12px;
+}
+
+@media (max-width: 620px) {
+    footer{
+        justify-content: center;
+        text-align: center;
+    }
+    footer div{
+        justify-content: center;
+    }
+}
